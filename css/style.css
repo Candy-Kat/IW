@@ -24,15 +24,7 @@ body {
   flex-wrap: wrap;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 48px;
-  font-family: 'Noto Sans', sans-serif;
-  
-}
+
 
 a {
   text-decoration: none;
@@ -54,17 +46,6 @@ a {
   height: 400px;
 }
 
-
-.navbar {
-  display:flex;
-  color: #fff;
-  flex-basis: 100%;
-  justify-content: space-between;
-  padding: 48px 48px  0;
-  
-  background-color: #0c313b22;
-
-}
 
 .boxes {
   display:flex;
