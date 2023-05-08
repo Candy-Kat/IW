@@ -1,0 +1,374 @@
+/* ------------------------------- Global ------------------------------------ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap'); /* navbar links */
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Noto+Sans:wght@300&display=swap'); /* IW logo up left */
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital@1&family=Licorice&family=Noto+Sans:wght@300&display=swap'); 
+/*Typerwriter font for the main headline */
+
+
+/* font-family: 'Noto Sans', sans-serif; */
+
+/* ------------------------------- /Global ------------------------------------ */
+
+ /* /////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ------------------------------- HTML tags ------------------------------------ */
+
+
+body { 
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 48px;
+  font-family: 'Noto Sans', sans-serif;
+  
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/* ------------------------------- /HTML tags ------------------------------------ */
+
+ /* /////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ------------------------------- Class selectors ------------------------------------ */
+
+/* .typewriter p {
+  overflow: hidden;
+  border-right: .10em solid #ffffff; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .10em; 
+  animation: 
+    typing 14s steps(67, end),
+    blink-caret .75s step-end infinite;
+    color: #ffffffce;
+} */
+
+.space {
+  display:flex;
+  flex-basis: 100%;
+  justify-content: center;
+  height: 400px;
+}
+
+/* 
+.typewriter {
+  flex-basis: 50px;
+  height: 50px;
+  align-self: center;
+  font-family: 'Anonymous Pro', monospace;
+  
+  
+} */
+
+.navbar {
+  display:flex;
+  color: #fff;
+  flex-basis: 100%;
+  justify-content: space-between;
+  padding: 48px 48px  0;
+  
+  background-color: #0c313b22;
+
+}
+
+.boxes {
+  display:flex;
+  flex-basis: 100%;
+  height: calc(25vh - 100px);
+  justify-content: space-evenly;
+}
+
+/* .box {
+  height: 75px;
+  width: 135px;
+  background-color: #0c313b46;
+  color: #fff;
+  font-size: 32px;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: center;
+  text-shadow: 
+    0 0 5px #ffffff,
+    0 0 15px #0e4eb6, 
+    0 0 20px #0e4eb6,
+    0 0 40px #0e4eb6, 
+    0 0 60px #2b1e7e, 
+    0 0 10px #0e4eb6,
+    0 0 98px #2b1e7e;
+
+} */
+
+
+
+/* .wf {
+  width: auto;
+  height: 60px;
+  transform: rotate(180deg);
+} */
+
+/* .left-top {
+   display: flex;
+   /* flex-direction: column;
+  align-items: center; */
+  
+
+
+
+
+.iw {
+  font-family: 'Licorice', cursive;
+  font-size: 36px;
+  width: 250px;
+}
+
+
+
+
+
+/* ------------------------------- /Class selectors ------------------------------------ */
+
+ /* /////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* ------------------------------- ID selectors ------------------------------------ */
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+#background {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  filter: brightness(1.2);
+  z-index: -2;
+
+}
+
+#li {
+  font-size: 18px;
+}
+
+/* ------------------------------- /ID selectors ------------------------------------ */
+
+ /* /////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ---------------------------------- Animation ----------------------------------------- */
+
+
+
+
+
+
+
+/* ---------------------------------- /Animation ----------------------------------------- */
+
+ /* /////////////////////////////////////////////////////////////////////////////////////// */
+
+/* ---------------------------------- Scrollbar ----------------------------------------- */
+
+/* ::-webkit-scrollbar {
+  width: 1rem;
+  background-color: #2f454a;
+ 
+
+}
+
+::-webkit-scrollbar-track {
+  background-color: #418fba3b ;
+  border-radius: 100vw; 
+ 
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100vw;
+  background-color: #015e73;
+  border: 6px solid #0c313b;
+
+  
+} */
+
+/* ---------------------------------- /Scrolbar ----------------------------------------- */
+
+
+
+
+/* ---------------------------------- Testing  ----------------------------------------- */
+
+
+.typewriter p {
+  border-right: .10em solid rgb(255, 255, 255);
+  font-family: 'Anonymous Pro', monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #fff;
+  font-size: 3rem;
+  background-color: #0c313b45;
+}
+
+.text {
+  width: 54rem;
+  animation: type 6s steps(33, end);
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .10em solid rgb(255, 255, 255);
+  }
+  100% {
+    border: none;
+  }
+}
+
+
+
+.text2 {
+  width: 52rem;
+  opacity: 0;
+  animation: type3 7s steps(32, end), blink .75s step-end infinite alternate;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+/* --------------------------------------------------------- */
+/* --------------------------------------------------------- */
+
+
+
+.link {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  line-height: 1em;
+  margin: 0;
+  font-size: 32px;
+  font-family: 'Noto Sans', sans-serif;
+  
+}
+
+.link--top {
+  position: absolute;
+  color: #ffffff;
+  top: 0;
+  display: inline-block;
+  clip-path: polygon(0% 66%, 0% 0%, 100% 0%, 100% 40%);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.25s, color 0.5s ease 0.22s;
+}
+
+.link--top:after {
+  content: "";
+  position: absolute;
+  
+  top: 36%;
+  left: 0;
+  width: 100%;
+  height: 4%;
+  background: rgba(255, 8, 0, 0.899);
+  transform: rotateZ(-2.2deg) scaleX(0%);
+  transform-origin: right top;
+  transition: transform 0.2s ease 0.22s;
+}
+
+.link--bottom {
+  display: inline-block;
+  clip-path: polygon(0% 65%, 100% 40%, 100% 110%, 0% 110%);
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  transition: color 0.5s ease 0.22s, background-position 0.2s ease 0.22s;
+  text-decoration: none;
+  background-size: 200% 8%;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, red 50%, transparent 50%);
+  
+}
+  
+
+.link--bottom:after {
+  content: "";
+  position: absolute;
+  
+  top: 40%;
+  left: 0;
+  width: 100%;
+  height: 4%;
+  background: red;
+  transform: rotateZ(-2deg) scaleX(0%);
+  transform-origin: right top;
+  transition: transform 0.2s ease 0.22s;
+}
+
+.link:hover .link--top {
+  color: red;
+  transform: translateY(-0.5em) rotateZ(-3deg);
+  transition: transform 0.5s cubic-bezier(.12,.8,.57,1.00) 0.42s, color 0.5s ease 0.22s;
+}
+
+.link:hover .link--bottom {
+  color: red;
+  background-position: 100% bottom;
+  transition: color 0.5s ease 0.2s, background-position 0.2s ease;
+}
+
+.link:hover .link--top:after {
+  top: 62%;
+  transform-origin: left top;
+  transform: rotateZ(-2.2deg) scaleX(100%);
+}
+
+.link:hover .link--bottom:after {
+  top: 65%;
+  transform-origin: left top;
+  transform: rotateZ(-2.1deg) scaleX(100%);
+}
+ 
+  
