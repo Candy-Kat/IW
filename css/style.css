@@ -14,7 +14,9 @@
  /* /////////////////////////////////////////////////////////////////////////////////////// */
 
 /* ------------------------------- HTML tags ------------------------------------ */
-
+html {
+display:flex;
+}
 
 body { 
   padding: 0;
@@ -22,15 +24,24 @@ body {
   overflow-x: hidden;  
   display: flex;
   flex-wrap: wrap;
+  flex-basis:100%;
 }
 
 
 
 a {
   text-decoration: none;
-  color: #fff;
+  
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 246px;
+  justify-content: end;
+  margin-left: 5px;
+  
+}
 
 /* ------------------------------- /HTML tags ------------------------------------ */
 
@@ -44,6 +55,8 @@ a {
   flex-basis: 100%;
   justify-content: center;
   height: 400px;
+  align-items: center;
+  z-index: -2;
 }
 
 
@@ -52,6 +65,10 @@ a {
   flex-basis: 100%;
   height: calc(25vh - 100px);
   justify-content: space-evenly;
+}
+
+.img-attribution {
+  color: #3a98ce;
 }
 
 
@@ -63,17 +80,7 @@ a {
 
 /* ------------------------------- ID selectors ------------------------------------ */
 
-#background-video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1;
-}
+
 
 #background {
   position: fixed;
@@ -178,4 +185,258 @@ a {
 
 
 
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  footer {
+    height: 225px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  footer {
+    height: 225px;
+    
+  }
+
+}
+
+
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  footer {
+    height: 225px;
+ 
+  }
+}
+
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .typewriter p {
+    max-width: 540px;
+    font-size: 30px;
+  }
+
+}
+
+@media (max-width: 883px) {
+  .container {
+    max-width: 640px;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .typewriter p {
+    max-width: 540px;
+    font-size: 30px;
+  }
+
+  .boxes {
+    display:flex;
+    flex-basis: 100%;
+    height: calc(25vh - 100px);
+    gap: 100px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .space {
+    display:flex;
+    flex-basis: 100%;
+    justify-content: center;
+    height: 250px;
+    align-items: center;
+    z-index: -2;
+  }
+
+
+ 
+  footer {
+    height: 375px;
+  }
+
+
+}
+/* sm */
+@media (max-width: 548px) {
+  .container {
+    max-width: 475px;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .space {
+    display:flex;
+    flex-basis: 100%;
+    justify-content: center;
+    height: 250px;
+    align-items: center;
+    z-index: -2;
+  }
+
+  .boxes {
+    display:flex;
+    flex-basis: 100%;
+    height: calc(25vh - 100px);
+    gap: 35px;
+  }
+
+
+ 
+  footer {
+    height: 375px;
+  }
+
+  .typewriter p {
+    max-width: 350px;
+    font-size: 24px;
+  }
+
+  #main-links {
+    font-size: 24px;
+  }
+
+
+}
+
+/* xs */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
   
+  .typewriter p {
+    max-width: 350px;
+    font-size: 24px;
+  }
+
+ #main-links {
+
+  font-size: 18px;
+
+
+  }
+
+}
+/* xs */
+@media (max-width: 412px) {
+  .container {
+    width: 100%;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  footer {
+    height: 400px;
+}
+
+  .boxes {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    height: calc(25vh - 100px);
+    gap: 35px;
+  }
+
+
+  .typewriter p {
+    max-width: 350px;
+    font-size: 24px;
+  }
+
+ #main-links {
+
+  font-size: 24px;
+
+
+  }
+
+
+  .space {
+    display:flex;
+    justify-content: center;
+    height: 250px;
+    align-items: center;
+    z-index: -2;
+   
+  }
+
+  .typewriter p {
+   margin-left: 16px;
+  }
+
+
+
+}

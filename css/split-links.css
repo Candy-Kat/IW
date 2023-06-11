@@ -27,7 +27,7 @@
     left: 0;
     width: 100%;
     height: 4%;
-    background: rgba(255, 8, 0, 0.899);
+    background: #c84f4be5;
     transform: rotateZ(-2.2deg) scaleX(0%);
     transform-origin: right top;
     transition: transform 0.2s ease 0.22s;
@@ -43,7 +43,7 @@
     background-size: 200% 8%;
     background-position: left bottom;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to right, red 50%, transparent 50%);
+    background-image: linear-gradient(to right,#c84f4be5 50%, transparent 50%);
     
   }
     
@@ -56,20 +56,20 @@
     left: 0;
     width: 100%;
     height: 4%;
-    background: red;
+    background: #c84f4be5;
     transform: rotateZ(-2deg) scaleX(0%);
     transform-origin: right top;
     transition: transform 0.2s ease 0.22s;
   }
   
   .split-link:hover .link--top {
-    color: red;
+    color: #c84f4be5;
     transform: translateY(-0.5em) rotateZ(-3deg);
     transition: transform 0.5s cubic-bezier(.12,.8,.57,1.00) 0.42s, color 0.5s ease 0.22s;
   }
   
   .split-link:hover .link--bottom {
-    color: red;
+    color: #c84f4be5;
     background-position: 100% bottom;
     transition: color 0.5s ease 0.2s, background-position 0.2s ease;
   }
