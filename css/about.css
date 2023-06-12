@@ -15,6 +15,11 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* bakcground */
 #background {
@@ -170,3 +175,63 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
 input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
     transform: rotate(-45deg);
 }
+
+
+.big-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+.q-cont{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    flex-basis: 600px;
+    align-items: center;
+    margin-top: 96px;
+    padding: 48px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #404368d0;
+    border-radius: 25px;
+    
+   
+}
+
+.align-start{
+    justify-content: start;
+    text-align: left;
+}
+
+.align-end {
+    justify-content: end;
+    text-align: right;
+} 
+
+.container-img {
+
+    height:auto;
+    width:125px;
+}
+
+.pointer {
+    height:auto;
+    width: 56px;
+}
+
+.list-cont{
+    justify-content: center;
+}
+
+.list-answer {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 12px;
+}
+
+
+
